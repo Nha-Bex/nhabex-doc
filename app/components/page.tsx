@@ -1,31 +1,45 @@
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
+/* export const metadata: Metadata = {
   title: "Components | Minimal Docs Site",
   description: "Explore the components available in our library",
-}
+} */
 
-export default function Components() {
+// pages/installation.js
+
+// pages/installation.js
+
+export default function Installation() {
   return (
     <div className="max-w-3xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Components</h1>
+      <h1 className="text-4xl font-bold mb-6">Instalação</h1>
       <p className="text-xl mb-4">
-        Our library provides a set of reusable components to help you build your application faster. Here&apos;s an
-        overview of some key components:
+        Para poder utilizar a plataforma Nhabex, a agência deverá estar registada em um dos
+        planos disponíveis. Após esse registo, o acesso à aplicação web é feito através do
+        seguinte endereço:
+        <a href="https://nhabex.com/commercial/login" className="text-blue-500">
+          https://nhabex.com/commercial/login
+        </a>
       </p>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Button</h2>
-      <p className="mb-4">
-        The Button component is a versatile and customizable button that can be used for various actions in your
-        application.
+      <div className="mt-6">
+        <img
+          src="/installation/login.png"
+          alt="Exemplo de imagem"
+          className="w-full h-auto"
+        />
+      </div>
+      {/* <h2 className="text-2xl font-semibold mt-8 mb-4">Button</h2> */}
+      <p className="mb-4 mt-6">
+        Para acesso é necessário introduzir as credenciais de acesso criadas durante o registo.
       </p>
-      <pre className="bg-muted p-4 rounded-md mb-4">
+      {/* <pre className="bg-muted p-4 rounded-md mb-4">
         <code>{`import { Button } from '@our-company/package';
 
 <Button variant="primary" onClick={() => console.log('Clicked!')}>
   Click me
 </Button>`}</code>
-      </pre>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Card</h2>
+      </pre> */}
+      {/* <h2 className="text-2xl font-semibold mt-8 mb-4">Card</h2>
       <p className="mb-4">The Card component is used to display content in a box with a consistent style.</p>
       <pre className="bg-muted p-4 rounded-md mb-4">
         <code>{`import { Card, CardHeader, CardContent } from '@our-company/package';
@@ -44,7 +58,7 @@ export default function Components() {
       </pre>
       <p className="mt-4">
         For a complete list of components and their props, please refer to our API Reference section.
-      </p>
+      </p> */}
     </div>
   )
 }

@@ -19,7 +19,7 @@ export default function Navigation() {
     <div className="fixed inset-y-0 z-50 flex w-72 flex-col border-r">
       <div className="border-b px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="font-bold text-2xl">Docs</span>
+          <span className="font-bold text-2xl">Doc</span>
         </Link>
       </div>
       <ScrollArea className="flex-1 py-4">
