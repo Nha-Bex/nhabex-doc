@@ -25,7 +25,7 @@ export default function Documentation() {
                     <div className="mt-6">
                         <img src="/agencia/advertising/img1.png" alt=" Ícone de Avisos e publicidade" className="w-full h-auto max-w-full" />
                     </div>
-                    <p className="text leading-relaxed">Para avisos e publicidade na agência o utilizador deve inserir os referidos dados do mesmo para cada agência.</p>
+                    <p className="text leading-relaxed mt-6">Para avisos e publicidade na agência o utilizador deve inserir os referidos dados do mesmo para cada agência.</p>
                     <div className="mt-6">
                         <img src="/agencia/advertising/img2.png" alt="  Avisos e publicidades da referida Agência" className="w-full h-auto max-w-full" />
                     </div>
@@ -84,10 +84,6 @@ export default function Documentation() {
                     <section>
                         <h2 className="text-2xl font-semibold mb-3 mt-6"> Imagem publicitários</h2>
                         <div className="mt-6">
-                            <img src="/agencia/worker/img.png" alt="Adicionar Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
-                        </div>
-                        {/* <h2 className="text-2xl font-semibold mb-3 mt-6">Vídeos publicitários</h2> */}
-                        <div className="mt-6">
                             <img src="/agencia/advertising/img6.png" alt=" Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
                         </div>
                         <p className="text leading-relaxed">Para adicionar um novo vídeo publicitário, o utilizador deverá clicar em “<b>Adicionar Vídeos</b>” situada no canto superior direito da secção.</p>
@@ -110,8 +106,31 @@ export default function Documentation() {
                         <p className="text leading-relaxed">  Para guardar os dados introduzidos e terminar o registo da imagem publicitários, o
                             utilizador deverá clicar no botão “<b>Adicionar</b>”.</p>
                         <div className="mt-6">
-                            <img src="/agencia/worker/img.png" alt="Adicionar Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
+                            <img src="/agencia/advertising/img7.png" alt="Adicionar Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
                         </div>
+                    </section>
+                    <section>
+                        <h2 className="text-2xl font-semibold mb-3 mt-6">Vídeos publicitários</h2>
+                        <div className="mt-6">
+                            <img src="/agencia/advertising/img8.png" alt=" Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
+                        </div>
+                        <p className="text leading-relaxed">Para adicionar um novo vídeo publicitário, o utilizador deverá clicar em “<b>Adicionar Vídeos</b>” situada no canto superior direito da secção.</p>
+                        <div className="mt-6">
+                            <img src="/agencia/advertising/img9.png" alt=" Adicionar Vídeo Publicitários na Agência" className="w-full h-auto max-w-full" />
+                        </div>
+                        <p className="text leading-relaxed">O formulário que surge ao utilizador tem um conjunto de campos obrigatórios para o registo de vídeo publicitários. Esses campos são:</p>
+                        <ul className="mb-4 list-inside list-disc space-y-1">
+                            <li>
+                                Escolher vídeo;
+                            </li>
+                            <li>
+                                Nome do vídeo;
+                            </li>
+                            <li>
+                                Data Início e Fim;
+                            </li>
+                        </ul>
+                        <p className="text leading-relaxed">Escolhe o referido vídeo, insira nome do vídeo e as datas de início e término do mesmo sabendo que os vídeos só podem ser visualizados no monitor se compreender entre as datas inseridas no sistema.</p>
                     </section>
                 </section>
             </div>

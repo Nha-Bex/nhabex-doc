@@ -27,9 +27,12 @@ const navItems = [
     hasSubmenu: true,
     submenu: [
       { title: "Fila de Espera", url: "/filadeespera", hasSubmenu: true, submenu: [
-        { title: "Operador Balcão", url: "/filadeespera/balcao" },
-        { title: "Monitor", url: "/filadeespera/submenu2" },
+        { title: "Operador ", url: "/filadeespera/balcao" },
+        { title: "Balcões", url: "/filadeespera/balcoes" },
         { title: "Agência", url: "/filadeespera/agencia" },
+        { title: "Serviços", url: "/filadeespera/service" },
+        { title: "Utentes", url: "/filadeespera/users" },
+        { title: "Prioridade", url: "/filadeespera/priority"}
       ] },
       { title: "Agendamento", url: "/agendamento" },
       { title: "Audiência", url: "/audiencia" },

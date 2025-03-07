@@ -9,7 +9,7 @@ export default function Documentation() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-3">Gestão da Agência</h2>
           <p className="text leading-relaxed">
-            Para aceder à secção correspondente às tarefas relacionadas com a dados da Agência, o utilizador deverá aceder à opção “Agência” no menu lateral:
+            Para aceder à secção correspondente às tarefas relacionadas com a dados da Agência, o utilizador deverá aceder à opção “<b>Agência</b>” no menu lateral:
           </p>
           <div className="mt-6">
             <img src="/agencia/img1.png" alt="Exemplo de imagem" className="w-full h-auto max-w-full" />
@@ -130,21 +130,6 @@ export default function Documentation() {
             </li>
           </ul>
         </section>
-
-
-
-        {/* <section className="mb-8">
-          <h2 className="mt-7 text-2xl font-semibold mb-3">Vídeo Demonstrativo</h2>
-          <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-            <iframe className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/s6Xk66ibZ-Y"
-              title="Vídeo do YouTube"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              sandbox="allow-same-origin allow-scripts allow-popups">
-            </iframe>
-          </div>
-        </section> */}
       </div>
     </div>
   );

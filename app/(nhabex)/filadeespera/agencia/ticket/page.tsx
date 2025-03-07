@@ -105,6 +105,24 @@ export default function Documentation() {
                         </li>
                     </ul>
                 </section>
+                <section>
+                <h2 className="text-2xl font-semibold mb-3 mt-6">Monitor da agência</h2>
+                    <div className="mt-6 mb-4">
+                        <img src="/agencia/ticket/img16.png" alt=" Ícone de Tela de Monitor da respetiva agência" className="w-full h-auto max-w-full" />
+                    </div>
+                    <p className="text leading-relaxed">A figura abaixo ilustra a tela onde permite os utentes acompanharem a sua vez quando for chamado uma senha.</p>
+                    <div className="mt-6 mb-4">
+                        <img src="/agencia/ticket/img17.png" alt=" Ticket e TimeLine da cada agência" className="w-full h-auto max-w-full" />
+                    </div>
+                    <h2 className="text-2xl font-semibold mb-3 mt-6"> Kiosk da agência</h2>
+                    <div className="mt-6 mb-4">
+                        <img src="/agencia/ticket/img15.png" alt="Ícone de Kiosk da respetiva agência" className="w-full h-auto max-w-full" />
+                    </div>
+                    <p className="text leading-relaxed">Na figura abaixo mostra a página que permite que os utentes emitem uma senha dos respetivo serviços que pretende efetuado na agência.</p>
+                    <div className="mt-6 mb-4">
+                        <img src="/agencia/ticket/img14.png" alt="Tela de Quiosque da agência" className="w-full h-auto max-w-full" />
+                    </div>
+                </section>
             </div>
         </div>
     );
