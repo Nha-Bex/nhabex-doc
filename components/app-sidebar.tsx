@@ -32,10 +32,13 @@ const navItems = [
         { title: "Agência", url: "/filadeespera/agencia" },
         { title: "Serviços", url: "/filadeespera/service" },
         { title: "Utentes", url: "/filadeespera/users" },
-        { title: "Prioridade", url: "/filadeespera/priority"}
+        { title: "Prioridade", url: "/filadeespera/priority"},
+        { title: "Utilizadores", url: "/filadeespera/utilizadores"},
       ] },
-      { title: "Agendamento", url: "/agendamento" },
-      { title: "Audiência", url: "/audiencia" },
+      { title: "Agendamento", url: "/agendamento"},
+      { title: "Audiência", url: "/audiencia", hasSubmenu: true, submenu: [
+        {title: "Gestão", url: "/audiencia/management"},
+        ]  },
     ],
   },
   { title: "Instalação", url: "/components" },
