@@ -67,7 +67,7 @@ export function AppSidebar() {
               <Link href="/">
                 <div className="w-full flex justify-center p-4">
                   <img
-                    src="/logo/logoNhabexTextGreen.svg"
+                    src="/public/images/logo/logoNhabexTextGreen.svg"
                     alt="Logo"
                     className="w-full h-auto object-contain"
                   />
