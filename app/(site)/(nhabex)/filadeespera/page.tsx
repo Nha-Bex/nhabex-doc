@@ -5,7 +5,7 @@ export default function Documentation() {
         <h1 className="text-4xl font-bold mb-6 text-center text-[#3CBDA1]">Fila de Espera</h1>
 
         <section className="mb-8">
-          {/* <div className="bg-background text-foreground border border-border dark:bg-gray-900 dark:text-white"> */}
+          {/* <div className="bg-background text-foreground border border-gray dark:bg-gray-900 dark:text-white"> */}
           <h2 className="text-2xl font-semibold mb-3 ">Visão Geral</h2>
           <p className="text leading-relaxed">
             O sistema de fila de espera do NhaBex permite que empresas organizem e gerenciem filas de atendimento de forma eficiente.

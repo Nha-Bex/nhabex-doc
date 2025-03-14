@@ -3,6 +3,7 @@ import { Facebook, Youtube, Instagram, Linkedin, Sun } from "lucide-react"
 
 export default function Footer() {
   return (
+    
     <footer className="bg-[#3cbda1] text-black py-12 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -98,11 +99,15 @@ export default function Footer() {
 
         {/* Bottom section */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-6 border-t border-emerald-500">
-          <div className="mb-4 md:mb-0">2024 © NhaBex</div>
+        <div className="container mx-auto">
+        <p className=" dark:text-gray-400 text-sm">
+          © {new Date().getFullYear()} NhaBex. Todos os direitos reservados.
+        </p>
+      </div>
           <div className="flex items-center space-x-2">
             <span>powered by</span>
-            <span className="font-bold text-blue-800">
-              B<span className="text-blue-600">SOLUTIONS</span>
+            <span className="mt-5 text-blue-800">
+              IT<span className="text-blue-600 text-xs">SOLUTIONS</span>
             </span>
           </div>
         </div>
