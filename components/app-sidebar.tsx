@@ -21,7 +21,9 @@ import {
   Megaphone,
   Code,
   CalendarClock,
+  Sun,
 } from "lucide-react"
+import ThemeToggle from "@/components/mode/ThemeToggle"
 
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -363,22 +365,40 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <div className="mt-auto p-4">
-        <div className="rounded-lg bg-[#3CBDA1]/10 p-4 border border-[#3CBDA1]/20">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="p-2 rounded-full bg-[#3CBDA1]/20">
-              <HelpCircle className="size-4 text-[#3CBDA1]" />
+      <div className="mt-auto">
+        {/* Theme Toggle */}
+        <div className="px-4 py-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Sun className="size-4 text-gray-500" />
+              <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Alterar Tema</span>
             </div>
-            <h4 className="font-medium text-sm">Precisa de ajuda?</h4>
+            <ThemeToggle />
           </div>
-          <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">
-            Acesse nossa central de suporte para obter assistência com o NhaBex.
-          </p>
-          <Link href="/suporte" className="block w-full">
-            <button className="w-full py-1.5 px-3 text-xs font-medium rounded-md bg-[#3CBDA1] text-white hover:bg-[#35a892] transition-colors">
-              Central de Suporte
-            </button>
-          </Link>
+        </div>
+
+        <div className="px-3">
+          <div className="h-px bg-gradient-to-r from-transparent via-[#3CBDA1]/30 to-transparent"></div>
+        </div>
+
+        {/* Support Section */}
+        <div className="p-4">
+          <div className="rounded-lg bg-[#3CBDA1]/10 p-4 border border-[#3CBDA1]/20">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="p-2 rounded-full bg-[#3CBDA1]/20">
+                <HelpCircle className="size-4 text-[#3CBDA1]" />
+              </div>
+              <h4 className="font-medium text-sm">Precisa de ajuda?</h4>
+            </div>
+            <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">
+              Acesse nossa central de suporte para obter assistência com o NhaBex.
+            </p>
+            <Link href="/suporte" className="block w-full">
+              <button className="w-full py-1.5 px-3 text-xs font-medium rounded-md bg-[#3CBDA1] text-white hover:bg-[#35a892] transition-colors">
+                Central de Suporte
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </Sidebar>
