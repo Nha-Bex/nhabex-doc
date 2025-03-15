@@ -1,6 +1,6 @@
 "use client"
 
-import Footer from "@/components/ThemeToggle/Footer"
+import Footer from "@/components/footer/Footer"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -101,7 +101,7 @@ export default function ClientPage() {
 
 
         {/* Hero Section */}
-        <section className="relative w-full overflow-hidden bg-gradient-to-br from-primary/10 to-transparent pt-16 pb-20">
+        <section className="relative w-full overflow-hidden bg-gradient-to-br from-primary/10 dark:bg-none to-transparent pt-16 pb-20">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -138,7 +138,7 @@ export default function ClientPage() {
 
 
         {/* About Section */}
-        <section className="py-16 bg-white dark:bg-gray-950">
+        <section className="py-16 bg-white dark:bg-dark border dark:border-none">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <Badge className="mb-4 bg-primary/20 text-primary hover:bg-primary/30">Sobre a Plataforma</Badge>
@@ -169,7 +169,7 @@ export default function ClientPage() {
 
 
         {/* Solutions Section */}
-        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+        <section className="py-16 bg-gray-light dark:bg-bg-color-dark">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <Badge className="mb-4 bg-primary/20 text-primary hover:bg-primary/30">Nossas Soluções</Badge>
@@ -213,9 +213,8 @@ export default function ClientPage() {
         </section>
 
 
-
         {/* Getting Started Section */}
-        <section className="py-16 bg-white dark:bg-gray-950">
+        <section className="py-16 border dark:border-none dark:bg-dark">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-primary/10 to-transparent rounded-2xl p-8 border border-primary/20">
@@ -275,6 +274,8 @@ export default function ClientPage() {
             </div>
           </div>
         </section>
+
+
       </main>
       <Footer />
     </div>

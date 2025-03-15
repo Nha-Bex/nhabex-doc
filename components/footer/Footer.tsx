@@ -4,7 +4,7 @@ import { Facebook, Youtube, Instagram, Linkedin, Sun } from "lucide-react"
 export default function Footer() {
   return (
     
-    <footer className="bg-[#3cbda1] text-black py-12 px-4 md:px-8 lg:px-16">
+    <footer className="bg-[#3cbda1] text-black pt-20 pb-20 px-4 -mb-10 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and company info */}
@@ -98,9 +98,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-6 border-t border-emerald-500">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-6 border-t border-black">
         <div className="container mx-auto">
-        <p className=" dark:text-gray-400 text-sm">
+        <p className=" text-dark text-sm">
           © {new Date().getFullYear()} NhaBex. Todos os direitos reservados.
         </p>
       </div>
