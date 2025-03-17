@@ -78,11 +78,11 @@ const navItems = [
         icon: <Users className="size-4" />,
         hasSubmenu: true,
         submenu: [
-          { title: "Operador", url: "/filadeespera/balcao" },
+          { title: "Operador", url: "/filadeespera/operador" },
           { title: "Balcões", url: "/filadeespera/balcoes" },
           { title: "Agência", url: "/filadeespera/agencia" },
-          { title: "Serviços", url: "/filadeespera/service" },
-          { title: "Utentes", url: "/filadeespera/users" },
+          { title: "Serviços", url: "/filadeespera/servico" },
+          { title: "Utentes", url: "/filadeespera/utente" },
           { title: "Prioridade", url: "/filadeespera/priority" },
           { title: "Utilizadores", url: "/filadeespera/utilizadores" },
         ],
@@ -141,7 +141,7 @@ export function AppSidebar() {
   }
 
   return (
-    <Sidebar className="border-r border-[#3CBDA1]/20 bg-gradient-to-b from-white to-[#3CBDA1]/5 dark:from-gray-950 dark:to-[#3CBDA1]/10">
+    <Sidebar className="border-r border-[#3CBDA1]/20  from-white  dark:from-dark dark:bg-dark">
       <SidebarHeader className="pb-6">
         <SidebarMenu>
           <SidebarMenuItem>

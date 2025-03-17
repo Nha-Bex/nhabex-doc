@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { ChevronRight, Info, AlertTriangle, Star, ArrowUpDown } from "lucide-react"
+import { ChevronRight, Info, AlertTriangle, Settings, Edit, Trash, PlusCircle } from "lucide-react"
 import Image from "next/image"
 
 export default function Documentation() {
@@ -13,14 +13,12 @@ export default function Documentation() {
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <span>Fila de Espera</span>
           <ChevronRight className="h-4 w-4" />
-          <span className="font-medium text-foreground">Prioridade</span>
+          <span className="font-medium text-foreground">Serviço</span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#3CBDA1] to-teal-600">
-          Gestão da Prioridade
+          Gestão de Serviço
         </h1>
-        <p className="text-xl text-muted-foreground">
-          Documentação completa para gerenciamento de prioridades no sistema
-        </p>
+        <p className="text-xl text-muted-foreground">Documentação completa para gerenciamento de serviços no sistema</p>
       </div>
 
       <Card className="border border-[#3CBDA1]/20 shadow-lg overflow-hidden bg-card">
@@ -28,15 +26,15 @@ export default function Documentation() {
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-4">
               <Badge className="bg-[#3CBDA1]/20 text-[#3CBDA1] hover:bg-[#3CBDA1]/30 px-3 py-1">Acesso</Badge>
-              <h2 className="text-2xl font-semibold">Acesso à Gestão da Prioridade</h2>
+              <h2 className="text-2xl font-semibold">Acesso à Gestão de Serviço</h2>
             </div>
 
             <div className="bg-[#3CBDA1]/5 p-4 rounded-lg border border-[#3CBDA1]/20 mb-6">
               <div className="flex items-start gap-3">
                 <Info className="h-5 w-5 text-[#3CBDA1] mt-0.5 flex-shrink-0" />
                 <p className="text-base leading-relaxed">
-                  Para aceder à secção correspondente às tarefas relacionadas com os dados da Prioridade, o utilizador
-                  deverá aceder à opção "<b>Prioridade</b>" no menu lateral:
+                  Para aceder à secção correspondente às tarefas relacionadas com a dados de Serviço, o utilizador
+                  deverá aceder à opção "<b>Serviço</b>" no menu lateral:
                 </p>
               </div>
             </div>
@@ -46,8 +44,8 @@ export default function Documentation() {
               <div className="p-1">
                 <div className="relative">
                   <Image
-                    src="/images/priority/img1.png"
-                    alt="Sessão de Gestão da Prioridade"
+                    src="/images/servico/img1.png"
+                    alt="Sessão de Gestão de Serviço"
                     width={1200}
                     height={800}
                     className="w-full h-auto rounded-md"
@@ -61,9 +59,9 @@ export default function Documentation() {
 
             <div className="prose prose-gray dark:prose-invert max-w-none mt-6">
               <p className="text-base leading-relaxed">
-                Na secção de informação aparece uma listagem com o resumo de todas as prioridades inscritas no sistema.
-                Nas linhas correspondentes a cada registo, existem dois opções que permitem efetuar tarefas como{" "}
-                <b>editar e eliminar</b> um determinado registo:
+                Na secção de informação aparece uma listagem com o resumo de todos serviços registados no sistema. Nas
+                linhas correspondentes a cada registo, existem três opções que permitem efetuar tarefas como{" "}
+                <b>configurações, editar e Eliminar</b> um determinado registo:
               </p>
             </div>
 
@@ -72,14 +70,14 @@ export default function Documentation() {
               <div className="p-1">
                 <div className="relative">
                   <Image
-                    src="/images/priority/img2.png"
-                    alt="Opções de Editar, Eliminar e Configuração de Prioridade"
+                    src="/images/servico/img2.png"
+                    alt="Opções de Configurações, Editar e eliminação de um Serviço"
                     width={1200}
                     height={800}
                     className="w-full h-auto rounded-md"
                   />
                   <div className="absolute bottom-4 right-4">
-                    <Badge className="bg-black/70 text-white hover:bg-black/80">Listagem de Prioridades</Badge>
+                    <Badge className="bg-black/70 text-white hover:bg-black/80">Listagem de Serviços</Badge>
                   </div>
                 </div>
               </div>
@@ -87,13 +85,13 @@ export default function Documentation() {
 
             <div className="flex items-center gap-3 mb-4 mt-10">
               <Badge className="bg-[#3CBDA1]/20 text-[#3CBDA1] hover:bg-[#3CBDA1]/30 px-3 py-1">Adicionar</Badge>
-              <h2 className="text-2xl font-semibold">Adicionar Prioridade</h2>
+              <h2 className="text-2xl font-semibold">Adicionar Serviço</h2>
             </div>
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-base leading-relaxed">
-                Para adicionar uma nova prioridade na plataforma, o utilizador deverá clicar em "<b>Adicionar</b>"
-                situada no canto superior direito da secção.
+                Para adicionar um novo serviço na plataforma, o utilizador deverá clicar em "<b>Adicionar</b>" situada
+                no canto superior direito da secção.
               </p>
             </div>
 
@@ -102,8 +100,8 @@ export default function Documentation() {
               <div className="p-1">
                 <div className="relative">
                   <Image
-                    src="/images/priority/img3.png"
-                    alt="Formulário de registo da prioridade"
+                    src="/images/servico/img3.png"
+                    alt="Formulário de registo de Serviço"
                     width={1200}
                     height={800}
                     className="w-full h-auto rounded-md"
@@ -115,32 +113,29 @@ export default function Documentation() {
               </div>
             </div>
 
-            <div className="mt-6 space-y-4">
-              <div className="bg-[#3CBDA1]/5 p-4 rounded-lg border border-[#3CBDA1]/20">
-                <div className="flex items-start gap-3">
-                  <Star className="h-5 w-5 text-[#3CBDA1] mt-0.5 flex-shrink-0" />
-                  <p className="text-base leading-relaxed">
-                    No sistema encontra-se 4 prioridade que estão definidas por lei. Caso seja pretende adicionar outras
-                    prioridades no sistema segue os campos abaixo.
-                  </p>
-                </div>
+            <div className="mt-6">
+              <p className="text-base leading-relaxed">
+                O formulário que surge ao utilizador tem um conjunto de campos obrigatórios para o registo de serviço
+                seja efetuado no sistema. Esses campos são:
+              </p>
+
+              <div className="mt-4 bg-white dark:bg-gray-800 rounded-lg border border-[#3CBDA1]/20 p-4">
+                <ul className="space-y-2">
+                  {["Nome", "Acrónimo", "Descrição", "Exemplo"].map((item, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#3CBDA1] mt-2"></div>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-[#3CBDA1]/20">
-                <div className="flex items-start gap-3">
-                  <ArrowUpDown className="h-5 w-5 text-[#3CBDA1] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-base leading-relaxed">
-                      No campo de ordem de chamadas <b>[Maior, Médio, Menor, Normal e Nenhuma]</b> são chamadas as
-                      ordens em que cada prioridade pode ser chamada através do sistema. Se não forem escolhidas a ordem
-                      no momento, o sistema adiciona todas as prioridades com ordem <b>nenhuma</b>.
-                    </p>
-                    <p className="text-base leading-relaxed mt-2">
-                      Para guardar os dados escolhidos do registo da prioridade, o utilizador deverá clicar em "
-                      <b>Adicionar</b>"
-                    </p>
-                  </div>
-                </div>
+              <div className="mt-4 flex items-center gap-2 bg-[#3CBDA1]/5 p-3 rounded-lg border border-[#3CBDA1]/20">
+                <PlusCircle className="h-5 w-5 text-[#3CBDA1] flex-shrink-0" />
+                <p className="text-base">
+                  Para guardar os dados introduzidos e terminar o registo de serviço, o utilizador deverá clicar o botão
+                  "<b>Adicionar</b>".
+                </p>
               </div>
             </div>
           </section>
@@ -150,13 +145,13 @@ export default function Documentation() {
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-4">
               <Badge className="bg-[#3CBDA1]/20 text-[#3CBDA1] hover:bg-[#3CBDA1]/30 px-3 py-1">Editar</Badge>
-              <h2 className="text-2xl font-semibold">Editar Prioridade</h2>
+              <h2 className="text-2xl font-semibold">Editar Serviço</h2>
             </div>
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-base leading-relaxed">
-                Ao clicar o ícone "<b>Editar</b>" em uma das prioridades, surge um formulário com apenas a ordem de
-                prioridade a serem chamadas.
+                Ao clicar o ícone "<b>Editar</b>", surge um formulário ao utilizador igual ao anteriormente apresentado,
+                com a diferença de este se encontrar preenchido.
               </p>
             </div>
 
@@ -165,8 +160,8 @@ export default function Documentation() {
               <div className="p-1">
                 <div className="relative">
                   <Image
-                    src="/images/priority/img4.png"
-                    alt="Formulário de Editar uma prioridade"
+                    src="/images/servico/img4.png"
+                    alt="Formulário de Editar um serviço"
                     width={1200}
                     height={800}
                     className="w-full h-auto rounded-md"
@@ -183,21 +178,21 @@ export default function Documentation() {
                 <Info className="h-5 w-5 text-[#3CBDA1] mt-0.5 flex-shrink-0" />
                 <p className="text-base leading-relaxed text-foreground">
                   No caso do ícone "<b>Editar</b>", o formulário permite que haja alterações aos dados. Para confirmar
-                  as alterações efetuadas à prioridade, o utilizador deve clicar o botão "<b>Editar</b>" para o efeito.
+                  as alterações efetuadas ao serviço, o utilizador deve clicar o botão "<b>Atualizar</b>" para o efeito.
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 mb-4 mt-10">
               <Badge className="bg-[#3CBDA1]/20 text-[#3CBDA1] hover:bg-[#3CBDA1]/30 px-3 py-1">Eliminar</Badge>
-              <h2 className="text-2xl font-semibold">Eliminar Prioridade</h2>
+              <h2 className="text-2xl font-semibold">Eliminar Serviço</h2>
             </div>
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-base leading-relaxed">
-                Para eliminar uma prioridade do sistema, o utilizador deverá clicar no ícone "Eliminar" no registo
-                correspondente. Ao clicar nesse ícone, um formulário surge ao utilizador para que este possa confirmar a
-                eliminação da prioridade.
+                Para eliminar um serviço do sistema, o utilizador deverá clicar no ícone "<b>Eliminar</b>" no registo
+                correspondente. Ao clicar nesse ícone um serviço surge ao utilizador para que este possa confirmar a
+                eliminação do serviço.
               </p>
             </div>
 
@@ -206,8 +201,8 @@ export default function Documentation() {
               <div className="p-1">
                 <div className="relative">
                   <Image
-                    src="/images/priority/img5.png"
-                    alt="Formulário de Eliminar Prioridade"
+                    src="/images/servico/img5.png"
+                    alt="Formulário de Eliminar um serviço"
                     width={1200}
                     height={800}
                     className="w-full h-auto rounded-md"
@@ -224,7 +219,7 @@ export default function Documentation() {
                 <AlertTriangle className="h-5 w-5 text-[#3CBDA1] mt-0.5 flex-shrink-0" />
                 <div className="text-base leading-relaxed text-foreground">
                   <p>
-                    Para confirmar a eliminação da prioridade, o utilizador deve clicar o botão <b>"Eliminar"</b>.
+                    Para confirmar a eliminação do serviço, o utilizador deve clicar o botão <b>"Remover"</b>.
                   </p>
                   <p className="mt-2 font-medium">Depois de eliminado, um serviço não pode ser recuperado.</p>
                 </div>
@@ -234,47 +229,37 @@ export default function Documentation() {
 
           <div className="mt-10 bg-[#3CBDA1]/10 rounded-lg p-6 border border-[#3CBDA1]/20">
             <div className="flex items-center gap-2 mb-4">
-              <Star className="h-5 w-5 text-[#3CBDA1]" />
-              <h3 className="text-lg font-semibold">Níveis de Prioridade</h3>
+              <Settings className="h-5 w-5 text-[#3CBDA1]" />
+              <h3 className="text-lg font-semibold">Ações Disponíveis</h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-[#3CBDA1]/20">
                 <div className="p-2 rounded-full bg-[#3CBDA1]/10">
-                  <Badge className="bg-red-500 text-white">Maior</Badge>
+                  <Settings className="h-4 w-4 text-[#3CBDA1]" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-sm">Prioridade Máxima</h4>
-                  <p className="text-xs text-muted-foreground">Atendimento imediato</p>
+                  <h4 className="font-medium text-sm">Configurações</h4>
+                  <p className="text-xs text-muted-foreground">Ajustar parâmetros</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-[#3CBDA1]/20">
                 <div className="p-2 rounded-full bg-[#3CBDA1]/10">
-                  <Badge className="bg-orange-500 text-white">Médio</Badge>
+                  <Edit className="h-4 w-4 text-[#3CBDA1]" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-sm">Prioridade Média</h4>
-                  <p className="text-xs text-muted-foreground">Atendimento preferencial</p>
+                  <h4 className="font-medium text-sm">Editar</h4>
+                  <p className="text-xs text-muted-foreground">Modificar dados</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-[#3CBDA1]/20">
                 <div className="p-2 rounded-full bg-[#3CBDA1]/10">
-                  <Badge className="bg-yellow-500 text-white">Menor</Badge>
+                  <Trash className="h-4 w-4 text-[#3CBDA1]" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-sm">Prioridade Baixa</h4>
-                  <p className="text-xs text-muted-foreground">Atendimento com alguma preferência</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-[#3CBDA1]/20">
-                <div className="p-2 rounded-full bg-[#3CBDA1]/10">
-                  <Badge className="bg-gray-500 text-white">Normal</Badge>
-                </div>
-                <div>
-                  <h4 className="font-medium text-sm">Sem Prioridade</h4>
-                  <p className="text-xs text-muted-foreground">Atendimento padrão</p>
+                  <h4 className="font-medium text-sm">Eliminar</h4>
+                  <p className="text-xs text-muted-foreground">Remover serviço</p>
                 </div>
               </div>
             </div>
