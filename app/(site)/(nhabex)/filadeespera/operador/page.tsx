@@ -14,7 +14,7 @@ export default function Documentation() {
           <span className="font-medium text-foreground">Operador</span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#3CBDA1] to-teal-600">
-          Fila de Espera
+          Operador
         </h1>
         <p className="text-xl text-muted-foreground">
           Documentação completa para operadores do sistema de fila de espera

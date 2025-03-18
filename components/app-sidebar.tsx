@@ -22,6 +22,9 @@ import {
   Code,
   CalendarClock,
   Sun,
+  ChartBarStackedIcon,
+  ChartArea,
+  BotIcon,
 } from "lucide-react"
 import ThemeToggle from "@/components/mode/ThemeToggle"
 
@@ -39,6 +42,7 @@ import {
 } from "@/components/ui/sidebar"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
+import { Chathura } from "next/font/google"
 
 // Map icons to menu items
 const getIcon = (title: string) => {
@@ -49,6 +53,7 @@ const getIcon = (title: string) => {
     Suporte: <HelpCircle className="size-4" />,
     "Fila de Espera": <Users className="size-4" />,
     Agendamento: <Calendar className="size-4" />,
+    chatbot: <BotIcon className="size-4" />,
     Audiência: <Video className="size-4" />,
     Pagamentos: <CreditCard className="size-4" />,
     Carro: <Car className="size-4" />,
@@ -67,7 +72,7 @@ const getIcon = (title: string) => {
 const navItems = [
   { title: "Home", url: "/", icon: <Home className="size-4" /> },
   {
-    title: "Soluções",
+    title: "Gestão Inteligentes",
     url: "/",
     icon: <Settings className="size-4" />,
     hasSubmenu: true,
@@ -78,6 +83,7 @@ const navItems = [
         icon: <Users className="size-4" />,
         hasSubmenu: true,
         submenu: [
+          { title: "Dashboard", url: "/filadeespera/dashboard" },
           { title: "Operador", url: "/filadeespera/operador" },
           { title: "Balcões", url: "/filadeespera/balcoes" },
           { title: "Agência", url: "/filadeespera/agencia" },
@@ -98,6 +104,11 @@ const navItems = [
         icon: <Video className="size-4" />,
         hasSubmenu: true,
         submenu: [{ title: "Gestão", url: "/audiencia/management" }],
+      },
+      {
+        title: "Assistente Virtual",
+        url: "/chatbot",
+        icon: <BotIcon className="size-4" />,
       },
     ],
   },
