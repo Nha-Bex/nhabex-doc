@@ -112,8 +112,8 @@ const navItems = [
       },
     ],
   },
-  { title: "Instalação", url: "/components", icon: <Code className="size-4" /> },
-  { title: "Suporte", url: "/api-reference", icon: <HelpCircle className="size-4" /> },
+  { title: "Instalação", url: "/instalation", icon: <Code className="size-4" /> },
+  { title: "Suporte", url: "/suporte", icon: <HelpCircle className="size-4" /> },
 ]
 
 export function AppSidebar() {
